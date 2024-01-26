@@ -9,9 +9,9 @@ st.write("[![Star](https://img.shields.io/github/stars/dataprofessor/links.svg?l
 col1, col2, col3 = st.columns(3)
 col2.image(Image.open('dp.png'))
 
-st.header('Chanin Nantasenamat, Ph.D.')
+st.header('Hi, I'm Sulaiman.')
 
-st.info('Developer Advocate, Content Creator and ex-Professor with an interest in Data Science and Bioinformatics')
+st.info('A proficient expert leveraging advanced AI tools like ChatGPT to offer a variety of online services')
 
 icon_size = 20
 
