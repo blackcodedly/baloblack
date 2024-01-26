@@ -1,8 +1,8 @@
 import streamlit as st
 from PIL import Image
+import base64
 
 def st_button(button_text, url, tooltip_text, icon_size):
-    # Updated button HTML to change the background color to blue and ensure the text is centered
     button_html = f"""<a href="{url}" target="_blank" style="text-decoration: none;">
     <button style="background-color: #007BFF; border: none; color: white; padding: 10px 20px; text-align: center;
     text-decoration: none; display: block; font-size: 16px; margin: 4px auto; cursor: pointer; border-radius: 12px; width: 100%;">
@@ -13,16 +13,27 @@ def st_button(button_text, url, tooltip_text, icon_size):
 # Display a GitHub stars badge using markdown
 st.markdown("[![Star](https://img.shields.io/github/stars/dataprofessor/links.svg?logo=github&style=social)](https://gitHub.com/dataprofessor/links)", unsafe_allow_html=True)
 
-# Displaying an image in the center column
+# Method to convert image to base64 (optional, use if displaying local images through HTML)
+def get_image_base64(path):
+    with open(path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode('utf-8')
+
+# Displaying an image in the center column, making it round and smaller
+image_path = 'dp.png'  # Path to your image
+image_base64 = get_image_base64(image_path)  # Convert image to base64, use if needed
+image_html = f"""<div style="text-align: center;">
+<img src="data:image/png;base64,{image_base64}" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;" />
+</div>"""
+
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    st.image(Image.open('dp.png'))
+    st.markdown(image_html, unsafe_allow_html=True)  # Use this line if using the base64 method
 
 st.header('Sulaiman.')
 
 st.info('A proficient expert leveraging advanced AI tools like ChatGPT to offer a variety of online services')
 
-icon_size = 20  # This no longer affects padding directly due to CSS adjustments
+icon_size = 20
 
 # Updated st_button function calls
 st_button('Follow me on Twitter', 'https://twitter.com/baloblack/', 'Follow me on Twitter', icon_size)
