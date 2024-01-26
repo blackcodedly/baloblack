@@ -19,5 +19,5 @@ st_button('twitter', 'https://twitter.com/baloblack/', 'Follow me on Twitter', i
 st_button('linkedin', 'https://www.linkedin.com/in/sulaiman-balogun-208557175//', 'Follow me on LinkedIn', icon_size)
 st_button('cup', 'https://www.buymeacoffee.com/baloblack/', 'Buy me a Coffee', icon_size)
 
-st.info('Check out my GPT-powered applications
+st.info('Check out my GPT-powered applications')
 st_button('Copywrite GPT', 'https://chat.openai.com/g/g-bFeD4GzK7-copywritegpt-crafting-ai-driven-content/', 'Crafting AI-Driven Content ✍️🤖 Revolutionizing Your Brands.', icon_size)
