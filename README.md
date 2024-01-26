@@ -28,38 +28,38 @@ load_css()
 col1, col2, col3 = st.columns(3)
 col2.image(Image.open('dp.png'))
 
-st.header('Chanin Nantasenamat, Ph.D.')
+st.header('Sulaiman.')
 
-st.info('Developer Advocate, Content Creator and ex-Professor with an interest in Data Science and Bioinformatics')
+st.info('A proficient expert leveraging advanced AI tools like ChatGPT to offer a variety of online services')
 
 icon_size = 20
 
-st_button('youtube', 'https://youtube.com/dataprofessor', 'Data Professor YouTube channel', icon_size)
-st_button('youtube', 'https://youtube.com/codingprofessor', 'Coding Professor YouTube channel', icon_size)
-st_button('medium', 'https://data-professor.medium.com/', 'Read my Blogs', icon_size)
-st_button('twitter', 'https://twitter.com/thedataprof/', 'Follow me on Twitter', icon_size)
-st_button('linkedin', 'https://www.linkedin.com/in/chanin-nantasenamat/', 'Follow me on LinkedIn', icon_size)
-st_button('newsletter', 'https://sendfox.com/dataprofessor/', 'Sign up for my Newsletter', icon_size)
-st_button('cup', 'https://www.buymeacoffee.com/dataprofessor/', 'Buy me a Coffee', icon_size)
+# Updated st_button function calls
+st_button('Follow me on Twitter', 'https://twitter.com/baloblack/', 'Follow me on Twitter', icon_size)
+st_button('Follow me on LinkedIn', 'https://www.linkedin.com/in/sulaiman-balogun-208557175/', 'Follow me on LinkedIn', icon_size)
+st_button('Buy me a Coffee', 'https://www.buymeacoffee.com/baloblack/', 'Support me on Buy me a Coffee', icon_size)
+
+st.info('Check out my GPT-powered applications')
+st_button('Crafting AI-Driven Content ✍️🤖 Revolutionizing Your Brands.', 'https://chat.openai.com/g/g-bFeD4GzK7-copywritegpt-crafting-ai-driven-content/', 'Explore Copywrite GPT', icon_size)
 ```
 
 There are 3 key information that you can modify:
 1. `st.header(A)` is used for specifying your name in place of **A**.
 Example:
 ```python
-st.header('Chanin Nantasenamat, Ph.D.')
+st.header('Sulaiman.')
 ```
 
 2. `st.info(B)` is used for speciying a quick description about who you are, what you do, etc. in place of **B**.
 Example:
 ```python
-st.info('Developer Advocate, Content Creator and ex-Professor with an interest in Data Science and Bioinformatics')
+st.info(''A proficient expert leveraging advanced AI tools like ChatGPT to offer a variety of online services')
 ```
 
 3. `st.button(D, E, F, G)` is a custom function for creating link buttons where **D** represents the icon to display (use `youtube` if the play button is to be displayed), **E** represents the URL, **F** represents the message to display on the clickable button and **G** represents the icon size.
 Example:
 ```python
-st_button('youtube', 'https://youtube.com/dataprofessor', 'Data Professor YouTube channel', icon_size)
+st_button('twitter', 'https://twitter.com/baloblack', 'My Twiter', icon_size)
 ```
 
 **Step 3**. Deploy to [Streamlit Cloud](https://streamlit.io/cloud). Log-in and click on the **New app** button. Choose the newly generated repo from Steps 1-2. Finally click on the **Deploy!** button. 
