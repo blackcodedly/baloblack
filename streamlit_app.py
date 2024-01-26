@@ -9,7 +9,7 @@ st.write("[![Star](https://img.shields.io/github/stars/dataprofessor/links.svg?l
 col1, col2, col3 = st.columns(3)
 col2.image(Image.open('dp.png'))
 
-st.header('Hi, I'm Sulaiman.')
+st.header('Sulaiman.')
 
 st.info('A proficient expert leveraging advanced AI tools like ChatGPT to offer a variety of online services')
 
