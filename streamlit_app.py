@@ -42,3 +42,4 @@ st_button('Buy me a Coffee', 'https://www.buymeacoffee.com/baloblack/', 'Support
 
 st.info('Check out my GPT-powered applications')
 st_button('Crafting AI-Driven Content ✍️🤖 Revolutionizing Your Brands.', 'https://chat.openai.com/g/g-bFeD4GzK7-copywritegpt-crafting-ai-driven-content/', 'Explore Copywrite GPT', icon_size)
+st_button('Unraveling Crypto Trends 📊💡 Personalized Bitcoin sentiment analysis guide.', 'https://chat.openai.com/g/g-4AWWN6mXB-bitcoin-analystgpt-unraveling-crypto-trends/', 'Bitcoin AnalystGPT', icon_size)
