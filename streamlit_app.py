@@ -43,3 +43,11 @@ st_button('Buy me a Coffee', 'https://www.buymeacoffee.com/baloblack/', 'Support
 st.info('Check out my GPT-powered applications')
 st_button('Crafting AI-Driven Content ✍️🤖 Revolutionizing Your Brands.', 'https://chat.openai.com/g/g-bFeD4GzK7-copywritegpt-crafting-ai-driven-content/', 'Explore Copywrite GPT', icon_size)
 st_button('Unraveling Crypto Trends 📊💡 Personalized Bitcoin sentiment analysis guide.', 'https://chat.openai.com/g/g-4AWWN6mXB-bitcoin-analystgpt-unraveling-crypto-trends/', 'Bitcoin AnalystGPT', icon_size)
+
+with ui.card(key="card1"):
+    ui.element("span", children=["Email"], className="text-gray-400 text-sm font-medium m-1", key="label1")
+    ui.element("input", key="email_input", placeholder="Your email")
+
+    ui.element("span", children=["User Name"], className="text-gray-400 text-sm font-medium m-1", key="label2")
+    ui.element("input", key="username_input", placeholder="Create a User Name")
+    ui.element("button", text="Submit", key="button", className="m-1")
